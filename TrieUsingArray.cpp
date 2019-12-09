@@ -38,7 +38,7 @@ void insert(char *str){
         if(!trie[x].next[val]){
             ///putting next arrays position at recent array's linked part
             trie[x].next[val] = new_element++;
-            trie[ptr-1].set();
+            trie[new_element-1].set();
         }
         x = trie[x].next[val];
     }
